@@ -57,7 +57,7 @@ eventEmitter.emit('doorOpen');
 
 // Read file with async and sync
 var fs = require('fs');
-fs.readFile('index.txt', function(err, data) {
+fs.readFile('input.txt', function(err, data) {
 	if (err) {
 		console.log(err);
 	} 
@@ -65,6 +65,6 @@ fs.readFile('index.txt', function(err, data) {
 		console.log('Async data is ' + data.toString());
 	}
 });
-var data = fs.readFileSync('index.txt');
+var data = fs.readFileSync('input.txt');
 console.log('Sync data is ' + data.toString());
 console.log('The end');
