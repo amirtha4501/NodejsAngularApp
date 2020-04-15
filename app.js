@@ -1,6 +1,3 @@
-var fs = require('fs');
+var server = require('./server');
 
-var readableStream = fs.createReadStream('in.txt');
-var writableStream = fs.createWriteStream('out.txt');
-
-readableStream.pipe(writableStream);
+server.startServer();
